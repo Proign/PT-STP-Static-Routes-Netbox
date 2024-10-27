@@ -141,6 +141,14 @@ exit
 ```
 
 Настройка коммутаторов 3550SwitchB, 3550SwitchC производится аналогично
+
+## Работоспособность STP при отключении FastEthernet0/3 на 3550SwitchA
+### До
+![Port UP](https://github.com/Proign/PT-STP-Static-Routes-Netbox/blob/main/screenshots/STP-1.PNG)
+
+### После
+![Port DOWN](https://github.com/Proign/PT-STP-Static-Routes-Netbox/blob/main/screenshots/STP-2-shutdown.PNG)
+
 # Статическая маршрутизация
 ## 2600RouterA
 ```
@@ -159,4 +167,16 @@ ip route 172.16.50.0 255.255.255.0 172.16.21.1
 ```
 
 На хостах HostA, HostB, HostC, HostD и HostG необходимо установить шлюз 172.16.10.1
+
+## Ping от HostE до HostB
+![Ping HostB from HostE](https://github.com/Proign/PT-STP-Static-Routes-Netbox/blob/main/screenshots/HostE2HostB.PNG)
+
+## Ping от HostG до HostF
+![Ping HostB from HostE](https://github.com/Proign/PT-STP-Static-Routes-Netbox/blob/main/screenshots/HostE2HostB.PNG)
+
 # Составление IP плана
+![HostA](https://github.com/Proign/PT-STP-Static-Routes-Netbox/blob/main/screenshots/Netbox-1.PNG)
+
+![HostA interface](https://github.com/Proign/PT-STP-Static-Routes-Netbox/blob/main/screenshots/Netbox-2.PNG)
+
+![HostA IP](https://github.com/Proign/PT-STP-Static-Routes-Netbox/blob/main/screenshots/Netbox-3.PNG)
